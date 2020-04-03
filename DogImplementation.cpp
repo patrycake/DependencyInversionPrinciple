@@ -6,7 +6,7 @@
 class DogImplementation: public DogInterface{
     public:
     DogImplementation(){}
-    void drinkWater() {
+    void drinkWater() override {
         std::cout << "Dog drinking water" << std::endl;
     }
 };

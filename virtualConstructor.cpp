@@ -3,8 +3,9 @@
 #include "DogImplementation.cpp"
 
 int main(){
-    DogImplementation* dogInt;
-    Dog dog(dogInt);
+    
+    DogImplementation * dogInt_ptr = new DogImplementation;
+    Dog dog(dogInt_ptr);
     dog.drinkWater();
     return 0;
 }

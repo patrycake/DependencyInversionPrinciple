@@ -7,6 +7,6 @@ class DogInterface{
     private:
     public:
     DogInterface(){}
-    void drinkWater();
+    virtual void drinkWater()=0;
 };
 #endif
