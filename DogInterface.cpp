@@ -8,5 +8,6 @@ class DogInterface{
     public:
     DogInterface(){}
     virtual void drinkWater()=0;
+    virtual void drinkWater(std::string)=0;
 };
 #endif

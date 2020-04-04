@@ -5,14 +5,15 @@
 #define DOG_CPP
 class Dog{
     public:
-    Dog(DogInterface* dogInterface){
-       _dogInterface =  dogInterface;
-    }
+    Dog(DogInterface* dogInterface, std::string name):
+    _dogInterface(dogInterface),
+    _name(name){}
     void drinkWater(){
-        _dogInterface->drinkWater();
+        _dogInterface->drinkWater(_name);
     }
     private:
-    DogInterface* _dogInterface;
+    DogInterface*  _dogInterface;
+    std::string _name;
 
 };
 #endif

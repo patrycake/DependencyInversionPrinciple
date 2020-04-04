@@ -9,5 +9,8 @@ class DogImplementation: public DogInterface{
     void drinkWater() override {
         std::cout << "Dog drinking water" << std::endl;
     }
+    void drinkWater(std::string name) override {
+        std::cout << "Dog " << name << " drinking water" << std::endl;
+    }
 };
 #endif
